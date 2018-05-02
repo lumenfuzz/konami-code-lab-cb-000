@@ -7,7 +7,13 @@ function init() {
   input.addEventListener('keydown', function(e) {
 
     if (parseInt(e.detail || e.which) == code[index]) {
-      alert(`Congrats!`)
+      index++
+
+      if (index == code.length) {
+        alert(`Congrats!`)
+      }
+    }else {
+      index = 0
     }
   })
 }
