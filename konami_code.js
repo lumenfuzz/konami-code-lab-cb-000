@@ -10,6 +10,4 @@ function init() {
       alert(`Congrats!`)
     }
   })
-
-  if ()
 }
