@@ -2,8 +2,14 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init() {
   // Write your JavaScript code inside the init() function
-
-  document.body.addEventListener('keydown', function(e) {
-    parseInt(e.detail || e.which)
+  const input = document.querySelector('body')
+  var key
+  input.addEventListener('keydown', function(e) {
+    key = parseInt(e.detail || e.which)
+    if (key == 38) {
+      alert(`Congrats!`)
+    }
   })
+
+  if ()
 }
